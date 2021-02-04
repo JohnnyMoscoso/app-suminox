@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.mirrajabi:search-dialog:1.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/search-dialog-1.1.aar/e435b6e053c0ba3b82cc865f7016ed91/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/search-dialog-1.1.aar/e435b6e053c0ba3b82cc865f7016ed91/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/search-dialog-1.1.aar/e435b6e053c0ba3b82cc865f7016ed91/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
