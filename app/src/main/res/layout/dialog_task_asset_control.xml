@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/alert_header_info_corners">
+
+    <TableRow
+        android:id="@+id/alert_logout_content_row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="14dp">
+
+        <TextView
+            android:id="@+id/text_title"
+            style="@style/AlertPrompt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3" />
+    </TableRow>
+    <TableRow android:id="@+id/alert_rtn_content_row"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alert_logout_content_row">
+        <ImageView
+            android:id="@+id/alert_image"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="Just insert a note"
+            app:srcCompat="@drawable/ic_pencil_note_dialog_text" />
+
+        <TextView
+            android:id="@+id/text_content"
+            style="@style/AlertPrompt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3" />
+    </TableRow>
+    <TableRow android:id="@+id/alert_mea_quantity_row"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alert_rtn_content_row">
+
+        <EditText
+            android:id="@+id/tx_input_observation"
+            style="@style/AlertFormInputText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Obervacion"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:singleLine="false" />
+    </TableRow>
+
+
+    <TableRow android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alert_mea_quantity_row">
+
+        <Button
+            android:id="@+id/alert_ok"
+            style="@style/AlertYes"
+            android:layout_width="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:text="Aceptar" />
+
+        <Button android:id="@+id/alert_cancel"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            style="@style/AlertNo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Cancelar" />
+
+    </TableRow>
+</RelativeLayout>

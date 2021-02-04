@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/customerHead"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimaryBright">
+
+
+        <TextView
+            android:id="@+id/total_visited_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="MI PERFIL"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/layout_change_pass"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginRight="3dp"
+                android:text="Cambiar contraseña"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="121dp"
+                android:layout_marginRight="121dp"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/ic_arrow_change_pass" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/customerHead"
+        android:orientation="vertical">
+
+        <TableRow
+            android:id="@+id/row_date_start"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_chekbox"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="14dp">
+
+            <ImageView
+                android:id="@+id/time_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/ic_person_profile" />
+
+            <EditText
+                android:id="@+id/tx_input_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Username"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <TextView
+            android:id="@+id/tx_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="Username"
+            android:textSize="12sp" />
+
+
+        <TableRow
+            android:id="@+id/row_date__end"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_chekbox"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="14dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/ic_name_user" />
+
+            <EditText
+                android:id="@+id/tx_input_name_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ems="10"
+                android:enabled="false"
+                android:textColor="@android:color/black"
+                android:hint="Nombre"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <TextView
+            android:id="@+id/tx_name_lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="Nombre"
+            android:textSize="12sp" />
+
+
+        <TableRow
+            android:id="@+id/row_new_fields"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_date__end"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="14dp">
+
+            <ImageView
+                android:id="@+id/image_fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/ic_user_mail" />
+
+            <EditText
+                android:id="@+id/tx_input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ems="10"
+                android:enabled="false"
+                android:textColor="@android:color/black"
+                android:hint="Email"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/tx_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="Email"
+            android:textSize="12sp" />
+
+        <TableRow
+            android:id="@+id/row_new_representant"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_new_fields"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="14dp">
+
+            <ImageView
+                android:id="@+id/image_representant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/ic_route_name" />
+
+            <EditText
+                android:id="@+id/tx_input_route"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ems="10"
+                android:enabled="false"
+                android:textColor="@android:color/black"
+                android:hint="Nombre de Ruta"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/tx_route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="Nombre de Ruta"
+            android:textSize="12sp" />
+
+        <TableRow
+            android:id="@+id/row_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_new_representant"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="14dp">
+
+            <ImageView
+                android:id="@+id/image_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/ic_route_code" />
+
+            <EditText
+                android:id="@+id/tx_input_route_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ems="10"
+                android:hint="Código de Ruta"
+                android:textColor="@android:color/black"
+                android:enabled="false"
+                android:inputType="number"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/tx_code_route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="Código de Ruta"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

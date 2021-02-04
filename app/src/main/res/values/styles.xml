@@ -1,0 +1,293 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Autocomplete edit text theme. -->
+    <style name="Autocomplete">
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlNormal">@android:color/black</item>
+        <item name="android:textColorHint">@android:color/black</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <!-- Alert styles -->
+    <style name="AlertFormInputText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:background">@drawable/activity_corners_input_text</item>
+    </style>
+    <style name="AlertYes">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/alert_yes_corners</item>
+    </style>
+
+    <style name="AlertNo">
+        <item name="android:textColor">#000</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/sign_up_button</item>
+    </style>
+
+
+    <style name="AlertPrompt">
+        <item name="android:textColor">#000</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:background">#FFF</item>
+    </style>
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">#FFFFFF</item>
+        <item name="colorSwitchThumbNormal">#444</item>
+        <item name="android:colorForeground">#42221f1f</item>
+    </style>
+
+    <!-- Content style -->
+    <style name="Content">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+    <!-- List contain style -->
+
+
+    <style name="TableDetailTextBig">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#474749</item>
+    </style>
+    <style name="TableDetailText">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#474749</item>
+    </style>
+    <style name="TablaDetailTextBlue">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#002753</item>
+    </style>
+
+    <style name="TableDetailInput">
+        <item name="android:textColor">#000000</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:ems">10</item>
+        <item name="android:background">@drawable/edit_text_corners</item>
+    </style>
+
+    <!-- TableLayout style-->
+    <style name="TableHeadTextTittle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:padding">5dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff29549f</item>
+    </style>
+
+    <style name="TableHead">
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+
+    <style name="TableHeadText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+
+
+    <style name="TableBody">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="TableBodyText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+
+
+    <style name="TableDetailTextWhite">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="TablaDetailTextWhiteBold">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="TableDetailTextBigWhite">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="TableDetailTextSmall">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#58585a</item>
+    </style>
+
+
+
+    <style name="TableDetailCheckBox">
+        <item name="android:textSize">0sp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <style name="TableSeparator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingTop">2dp</item>
+    </style>
+
+    <style name="TableSeparatorNo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+    </style>
+
+    <style name="TableSeparatorTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="TableSeparatorTextViewMax">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="TableSeparatorTextViewMin">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left|top</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="TableSeparatorInputText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:hint">@null</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:background">@drawable/activity_corners_input_text</item>
+    </style>
+
+    <style name="TableSeparatorInputTextNo">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:hint">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:editable">false</item>
+        <item name="android:background">@drawable/activity_corners_input_text</item>
+    </style>
+
+
+
+    <style name="TableSeparatorFrameLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+
+
+    <style name="TableHeadTextTittleAmount">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:textSize">12sp</item>>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff29549f</item>
+    </style>
+    <style name="TableHeadTextAmount">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+
+    <!-- List contain style -->
+    <style name="ListContain">
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:paddingRight">10dip</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:paddingBottom">5dip</item>
+    </style>
+
+    <style name="ListContainText">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frame_order_new_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/frame_order_photo"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent">
+
+            <TextView
+                android:id="@+id/text_order_new_event"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@+id/action_order_detail"
+                android:background="@drawable/corners_gray"
+                android:gravity="left"
+                android:text="Seleccionar todos"
+                android:textColor="@android:color/white"
+                android:textSize="11dp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/action_order_detail"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginRight="19dp"
+                android:layout_marginBottom="19dp"
+                app:srcCompat="@drawable/ic_check_box_all_white" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_order_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/transparent">
+
+            <TextView
+                android:id="@+id/text_order_potho"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/corners_gray"
+                android:gravity="left"
+                android:text="Sincronizar datos"
+                android:textColor="@android:color/white"
+                android:textSize="11dp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/action_order_close"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginRight="19dp"
+                android:layout_marginBottom="19dp"
+                app:srcCompat="@drawable/ic_sync_white_menu" />
+
+
+        </FrameLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/action_new_event_trip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="20dp"
+            app:backgroundTint="@color/colorPrimaryDark"
+            app:srcCompat="@drawable/ic_menu_event" />
+    </RelativeLayout>
+</RelativeLayout>

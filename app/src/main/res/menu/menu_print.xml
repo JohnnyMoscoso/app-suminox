@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sales.views.activities.MainActivity" >
+
+    <item
+        android:id="@+id/action_print"
+        android:orderInCategory="1"
+        android:title="Print"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_print"/>
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="2"
+        android:title="@string/navigation_start"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_logout_white_menu"/>
+
+</menu>

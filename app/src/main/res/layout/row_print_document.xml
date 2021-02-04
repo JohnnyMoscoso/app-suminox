@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="@dimen/standard_105"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:padding="5dip">
+
+    <LinearLayout
+        android:id="@+id/layout_distance"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ic_synced_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/ic_file_accent" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/layout_distance"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/layout_distance"
+        android:baselineAligned="false"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0.9"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/tx_number_document"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@null"
+                    android:layout_weight="4"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/tx_synced_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@null"
+                    android:textSize="10sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row_type_hive"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/row_chekbox"
+                android:layout_marginTop="5dp">
+
+                <!--
+                <TextView
+                    android:id="@+id/tx_total_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:text="sdlkvmksvnjksdvnjsdjvn"
+                    android:textColor="@android:color/black"
+                    android:textSize="13dp"
+                    android:typeface="sans" /> -->
+
+                <TextView
+                    android:id="@+id/tx_total_pay"
+
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@null"
+                    android:textColor="@android:color/black"
+                    android:textSize="13dp"
+                    android:typeface="sans" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    app:srcCompat="@drawable/ic_calendar_date" />
+
+                <TextView
+                    android:id="@+id/tx_date_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="@null"
+                    android:textColor="@android:color/black"
+                    android:textSize="13dp"
+                    android:typeface="sans" />
+
+
+            </TableRow>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

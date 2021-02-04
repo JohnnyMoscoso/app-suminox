@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <TableRow android:id="@+id/alert_logout_content_row"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/multiple_option_title"
+            style="@style/AlertPrompt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3" />
+    </TableRow >
+    <TableRow android:id="@+id/alert_logout_content_con"
+        android:layout_below="@+id/alert_logout_content_row"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/multiple_option_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textColor="#000"
+            android:textSize="16sp" />
+    </TableRow>
+
+    <ListView
+        android:id="@+id/multiple_options"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alert_logout_content_con"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <Button
+            android:id="@+id/alert_ok"
+            style="@style/AlertYes"
+            android:layout_width="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:text="Aceptar" />
+
+        <Button
+            android:id="@+id/alert_cancel"
+            style="@style/AlertNo"
+            android:layout_width="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:text="Cancelar" />
+
+    </TableRow>
+
+
+
+</LinearLayout>

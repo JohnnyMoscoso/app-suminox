@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:padding="5dip" >
+
+    <LinearLayout
+        android:id="@+id/layout_distance"
+        android:layout_width="48dp"
+        android:layout_height="64dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tx_type_document"
+            android:layout_width="48dip"
+            android:layout_height="55dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="7dp"
+            android:text="C"
+            android:textColor="@android:color/black"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ly_state_sync"
+            android:layout_width="48dp"
+            android:layout_height="7dp"
+            android:layout_below="@+id/tx_type_document"
+            android:background="@color/colorAccent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/layout_distance"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/layout_distance"
+        android:baselineAligned="false"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0.9"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/tx_number_document"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="DOC 00001"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/tx_fac_bol_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:text="FACTURA / BOLETA" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ic_calendar"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@drawable/ic_calendar_date" />
+
+                <TextView
+                    android:id="@+id/tx_label_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FECHA:"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tx_input_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="TextView"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/ic_total"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@drawable/ic_total_sells_red" />
+
+                <TextView
+                    android:id="@+id/tx_label_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TOTAL:"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tx_input_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="TextView"
+                    android:textSize="12sp" />
+
+            </TableRow>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

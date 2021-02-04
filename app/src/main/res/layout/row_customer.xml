@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:padding="5dip" >
+
+    <LinearLayout
+        android:id="@+id/layout_distance"
+        android:layout_width="48dp"
+        android:layout_height="64dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="48dip"
+            android:layout_height="55dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="7dp"
+            android:text="C"
+            android:textColor="@android:color/black"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="48dp"
+            android:layout_height="7dp"
+            android:layout_below="@+id/distance"
+            android:background="@color/colorAccent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/layout_distance"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/layout_distance"
+        android:baselineAligned="false"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0.9"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tx_business_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Business"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:typeface="sans" />
+
+            <TableRow
+                android:id="@+id/row_type_hive"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/row_chekbox">
+
+                <TextView
+                    android:id="@+id/tx_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:layout_weight="8"
+                    android:paddingTop="5dp"
+                    android:text="Code"
+                    android:textColor="@android:color/black"
+                    android:textSize="13dp"
+                    android:typeface="sans" />
+
+                <ImageView
+                    android:id="@+id/ic_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_phone_customer_red" />
+
+                <TextView
+                    android:id="@+id/tx_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:layout_weight="8"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Phone"
+                    android:textColor="@android:color/black"
+                    android:textSize="13dp"
+                    android:typeface="sans" />
+
+            </TableRow>
+
+            <TextView
+                android:id="@+id/tx_representative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Representative"
+                android:textColor="@android:color/black"
+                android:textSize="12dp"
+                android:typeface="sans" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

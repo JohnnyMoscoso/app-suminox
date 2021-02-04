@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@drawable/alert_header_info_corners">
+<TableRow android:id="@+id/alert_info_content_row"
+    android:layout_width="fill_parent"
+    android:layout_marginTop="12dp"
+    android:layout_marginRight="14dp"
+    android:layout_marginLeft="14dp"
+    android:layout_height="wrap_content">
+    <ImageView android:id="@+id/alert_info"
+        android:contentDescription="Esla info"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:srcCompat="@drawable/ic_alert_info"/>
+    <TextView android:id="@+id/alert_info_title"
+        android:layout_marginLeft="5dp"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        style="@style/AlertPrompt"/>
+</TableRow >
+<TableRow android:id="@+id/alert_info_content_con"
+    android:layout_below="@+id/alert_info_content_row"
+    android:layout_width="fill_parent"
+    android:layout_marginTop="12dp"
+    android:layout_marginRight="14dp"
+    android:layout_marginLeft="14dp"
+    android:layout_height="wrap_content">
+    <TextView android:id="@+id/alert_save_content"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000"/>
+</TableRow>
+
+<TableRow android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/alert_info_content_con">
+
+    <Button
+        android:id="@+id/alert_ok"
+        style="@style/AlertYes"
+        android:layout_width="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:text="Generar" />
+    <Button android:id="@+id/alert_cancel"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        style="@style/AlertNo"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="Cancelar" />
+
+</TableRow>
+
+</RelativeLayout>

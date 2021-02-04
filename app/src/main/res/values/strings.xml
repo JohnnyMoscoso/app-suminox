@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">CloudSales</string>
+    <string name="app_version">Versión 3.1</string>
+
+    <!-- String related to loading-->
+    <string name="action_loading">Cargando ... espere por favor</string>
+    <!-- Strings related to login -->
+    <string name="prompt_welcome"> Welcome to CloudBee</string>
+    <string name="prompt_user">Usuario</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="action_sign_in">INICIAR SESIÓN</string>
+    <string name="action_sign_up">REGÍSTRATE</string>
+
+    <!-- String related to navigability -->
+    <string name="drawer_open">Abrir</string>
+    <string name="drawer_close">Cerrar</string>
+
+    <string name="navigation_start">Inicio</string>
+    <string name="navigation_location">Ubicación</string>
+
+    <string name="navigation_customers">Clientes</string>
+    <string name="navigation_sync">Sincronización</string>
+    <string name="navigation_print_documents">Reimpresión de Documentos</string>
+    <string name="navigation_indicators">Indicadores</string>
+    <string name="navigation_pending">Pendientes de Sincronización</string>
+    <string name="navigation_order_charge">Pedido de Carga</string>
+    <string name="navigation_profile">Perfil</string>
+    <string name="navigation_new_customer">Nuevo Cliente</string>
+    <string name="navigation_logout">Salir</string>
+
+    <!-- Fragments-->
+    <string name="sync_data_fragment">Sincronización de Datos</string>
+    <string name="sync_content_fragment">Seleccione los datos a traer del servidor: </string>
+    <string name="no_items">No hay productos.</string>
+
+
+    <!-- Strings related to validation -->
+    <string name="error_invalid_user">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="logout_message">¿ Está seguro de salir de la APP ?</string>
+    <string name="logout_message_sucessfull">Su sesión finalizó correctamente.</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_maps">Map</string>
+
+
+    <!-- Strings related to profile -->
+    <string name="fragment_profile">Mi Perfil</string>
+    <string name="hint_profile_user">Usuario</string>
+    <string name="hint_profile_code">Código</string>
+    <string name="hint_profile_name">Nombre</string>
+    <string name="hint_profile_type">Tipo</string>
+    <string name="hint_profile_date_connection">Última Conexión</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="alert_action_device">BUSCAR DISPOSITIVOS</string>
+    <string name="alert_device_scanning">Buscando Dispositivo(s)</string>
+    <string name="alert_device_select">Seleccione Dispositivo(s)</string>
+    <string name="alert_device_connect">Dispositivo(s) Conectado(s)</string>
+    <string name="alert_device_no_connect">Dispositivo(s) No Conectado(s)</string>
+    <string name="alert_device_connect_no_found">Dispositivo(s) No Encontrado(s)</string>
+
+    <string name="printer_state">ESTADO DE LA IMPRESORA</string>
+    <string name="printer_mac_address">DIRECCION MAC</string>
+
+
+</resources>

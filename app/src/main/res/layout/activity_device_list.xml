@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/device_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <TableRow
+        android:id="@+id/tb_device_connect"
+        style="@style/TableHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_devices_connection" />
+
+        <TextView
+            android:id="@+id/tv_device_connect"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="Dispositivos emparejados"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </TableRow>
+
+    <ListView
+        android:id="@+id/paired_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="@color/colorSecondCategory"
+        android:textColor="#002753" />
+
+    <TableRow
+        android:id="@+id/tb_device_no_connect"
+        style="@style/TableHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_devices_found" />
+
+        <TextView
+            android:id="@+id/tv_device_no_connect"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="Dispositivos encontrados"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </TableRow>
+
+    <ListView
+        android:id="@+id/new_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="@android:color/darker_gray"
+        android:textColor="#343434" />
+
+    <Button
+        android:id="@+id/device_scan"
+        style="@style/AlertYes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar Dispositivos"
+        android:visibility="gone" />
+
+</LinearLayout>
