@@ -107,7 +107,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         actionBar.setDisplayShowCustomEnabled(true);
 
         actionBar.setDisplayShowTitleEnabled(true);
-        actionBar.setTitle("CloudSales");
+        actionBar.setTitle(R.string.app_name);
 
         //getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         LayoutInflater inflator = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
